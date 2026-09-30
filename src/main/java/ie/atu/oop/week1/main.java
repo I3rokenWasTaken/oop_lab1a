@@ -10,7 +10,6 @@ public class main {
         firstbook.title = "Dune";
         firstbook.author = "Frank Herbert";
         firstbook.pageCount = 412;
-
         //before loan
         firstbook.displayDetails();
         firstbook.borrowBook();
