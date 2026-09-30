@@ -1,14 +1,12 @@
-firstBook = {Book@1227}
-pageCount = 412
-① title = "dune"
-① value = (byte[4] @1234) [100, 117, 110, 101]... View
-coder = 0
-hash = 0
-① hashis Zero = false
-f author = "Frank Herbert"
->
-value = {byte[13]@1235) [70, 114, 97, 110, 107, 32, 72, 101, 114, 98, 101, 114, 116]... View
-f coder = 0
-hash = 0
-f hashis Zero = false
-① available = false
+# oop Lab 1: Java Book Tracker
+
+## Run
+Open the project in Intelli with JDK 21 and run Main.java.
+
+## Object model
+Book defines is Book firstBook = createBook("dune", "Frank Herbert", 412);
+firstBook has the description of Title, Author, Page count
+
+## Verification
+So when I put the borrowed code, and when I ran it, it showed that when a book has been borrowed, the availability output becomes false.
+which means the code run was successful
