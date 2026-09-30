@@ -6,26 +6,19 @@ public class main {
     public static void main(String[] args)
     {
 
-        Book firstbook = new Book();
-        firstbook.title = "Dune";
-        firstbook.author = "Frank Herbert";
-        firstbook.pageCount = 412;
-        //before loan
-        firstbook.displayDetails();
-        firstbook.borrowBook();
-        //after loan
-        firstbook.displayDetails();
-
-        Book secondbook = createBook("Clean Code", "Dan Williams", 223);
-        Book thirdbook = createBook("Another Book Code", "John Murphy", 333);
-        Book fourthbook = createBook("Student Life", "Merry Shelley", 442);
+        Book firstBook = createBook("dune", "Frank Herbert", 412);
+        Book secondBook = createBook("Clean Code", "Robert C. Martin", 464);
+        Book thirdBook = createBook("The C Programming Language", "Kernighan and Ritchie", 274);
 
         System.out.println("\n");
-        secondbook.displayDetails();
+        firstBook.displayDetails();
         System.out.println("\n");
-        thirdbook.displayDetails();
+        secondBook.displayDetails();
         System.out.println("\n");
-        fourthbook.displayDetails();
+        thirdBook.displayDetails();
+
+        firstBook.borrowBook();
+        firstBook.displayDetails();
     }
 
     private static Book createBook(String title, String author, int pageCount)
