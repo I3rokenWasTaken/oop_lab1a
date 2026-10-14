@@ -1,12 +1,26 @@
-# oop Lab 1: Java Book Tracker
+# Lab 4 – Library Catalogue
 
-## Run
-Open the project in Intelli with JDK 21 and run Main.java.
 
-## Object model
-Book defines is Book firstBook = createBook("dune", "Frank Herbert", 412);
-firstBook has the description of Title, Author, Page count
+Updated `LibraryService` to store multiple books using `List<Book>`.
+The program can add, count, list, search, remove, loan and return books.
 
-## Verification
-So when I put the borrowed code, and when I ran it, it showed that when a book has been borrowed, the availability output becomes false.
-which means the code run was successful
+## How it operates
+- `List<Book>` stores the books in an `ArrayList`.
+- `final` prevents the list variable from being reassigned, but books can still be added or removed.
+- `findBookByTitle()` returns the book if found, or `null` if missing.
+- `removeBook()` returns `true` if removed, or `false` if not found.
+- Loans must be between 1 and 14 days.
+
+## Class responsibilities
+- `Main`: runs the program and prints results.
+- `LibraryService`: manages the collection.
+- `Book`: manages its own borrowing status.
+
+## Results
+- Three books added.
+- Dune successfully loaned and returned.
+- Missing book search returned `false` for the loan.
+- Clean Code removed.
+- Final book count: **2**.
+- Maven build: **BUILD SUCCESS**.
+- Debugger used to inspect the list and search.
